@@ -35,10 +35,11 @@ those being: create/edit/delete/vote posts and comments.
 
 UI:
 - First of all, as there wasn't supposed to be any Register/Login mechanism, users should insert their username on top of the page. Just after insertion, the state is updated with the active user. There is no need to click on any button for that (with that said, if the page is reloaded, the username must be inserted again);
+- Users can create new posts, providing a title, message and category for the post (can only be one of the three: React, Redux or Udacity);
 - Users can only edit or delete posts of their own authority;
 - The voting mechanism is very simple and has no checks for state (meaning, any user can click on the 'thumbs up' or 'thumbs down' icon as many times as they want), for purposes of demonstration only;
 - The user avatar is the same for every user entered, for purposes of demonstration only.
-- Every post displays its own category (can only be one).
+- Every post displays its own category.
 - The user can choose to only see posts of a certain category. When the user selects a category, only posts from that category will be displayed below. If 'none' is selected, all posts from all categories will be displayed (this is why I ended up not creating tabs for each category). 
 
 Code Specs:
