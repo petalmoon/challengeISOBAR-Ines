@@ -1,0 +1,121 @@
+
+@font-face {
+  font-family: 'Arvo';
+  src: local('Arvo'), url('assets/fonts/Arvo-Regular.ttf') format('woff');
+}
+
+body{
+  font-family: 'Arvo', serif;
+}
+
+.App {
+  text-align: center;
+  background-image: url("./assets/images/back4.jpg");
+  background-size: cover;
+
+}
+
+.App-logo {
+  height: 35vmin;
+  pointer-events: none;
+}
+
+.App-logo-spy {
+  margin: 20px;
+  height: 35vmin;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /*background-image: url("./assets/images/remi-jacquaint-vSWc5Hs7_Ag-unsplash.jpg");*/
+  background-image: url("./assets/images/back4.jpg");
+  background-size: cover;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-size: cover;
+}
+
+.App-link {
+  color: #000000;
+  margin-bottom: 10%;
+  font-family: "Droid Sans", monospace;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.avatar-style {
+  background-size: cover;
+  width: 6vh;
+  margin-left: 24%;
+  margin-top: 20%;
+
+}
+
+.icon-style {
+  width: 4vh;
+
+}
+
+.new-post {
+  margin-top: 10vh;
+  width: 70%;
+}
+
+.feed-style{
+  background-color: white;
+  background-size: cover;
+
+
+}
+
+
+.form-wrapper {
+  flex-direction: column;
+  width: 280px;
+  max-width: 80%;
+  justify-content: center;
+  min-width: 100px;
+  max-height: 400px;
+  padding: 20px 40px;
+  border-radius: 6px;
+  box-shadow: 0px 3px 20px #222;
+  background-color: #fefefe;
+}
+
+.form-wrapper > h2 {
+  justify-content: center;
+  font-family: "Segoe UI", "Ubuntu", "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  margin-top: 0.25em;
+  color: #222;
+}
+
+form {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+
+.posts-category {
+  font-family: "Segoe UI", "Ubuntu", "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+}
