@@ -83,20 +83,12 @@ class NewPost extends Component {
                                 <div className="col-75" style={{marginTop:10}}>
                                     <label style={{marginRight:10}} >Post Category</label>
 
-                                    <Select  /*value={this.state.category} */
-                                        onChange={(e)=>this.handleChangeCat(e)}
-                                    >
-                                        <MenuItem value="none">
-                                            <em>None</em>
-                                        </MenuItem>
+                                    <Select onChange={(e)=>this.handleChangeCat(e)}>
                                         <MenuItem value="react">React</MenuItem>
                                         <MenuItem value="redux">Redux</MenuItem>
                                         <MenuItem value="udacity">Udacity</MenuItem>
                                     </Select>
-                                    <Button
-                                        style={{ alignSelf: 'flex-end', margin: 20,backgroundColor:'#f2ccff'}}
-                                        onClick={() => this.onSubmit()}
-                                    >
+                                    <Button style={{ alignSelf: 'flex-end', margin: 20,backgroundColor:'#f2ccff'}} onClick={() => this.onSubmit()}>
                                         Add Post
                                     </Button>
                                 </div>
