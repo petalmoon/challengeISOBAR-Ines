@@ -153,9 +153,7 @@ class SinglePost extends Component {
                 body: this.state.cbody,
                 author: getUser(),
                 parentId: this.props.id
-
             })
-
         } else {
             alert('You have to write something!');
         }

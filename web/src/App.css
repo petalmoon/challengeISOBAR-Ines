@@ -34,8 +34,7 @@ body{
 
 .App-header {
   /*background-image: url("./assets/images/remi-jacquaint-vSWc5Hs7_Ag-unsplash.jpg");*/
-  background-image: url("./assets/images/back4.jpg");
-  background-size: cover;
+
   max-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -24,26 +24,28 @@ class NewPost extends Component {
         this.state = {
             title:'',
             content: '',
-            error: '',
             category:''
         }
     }
     onSubmit() {
         console.log(this.props);
+        if(getUser()){
         if (this.state.content){
-            this.props.addPost({
-                id: uuidv1(),
-                timestamp: Date.now(),
-                title: this.state.title,
-                body: this.state.content,
-                author: getUser(),
-                category:this.state.category
+                this.props.addPost({
+                    id: uuidv1(),
+                    timestamp: Date.now(),
+                    title: this.state.title,
+                    body: this.state.content,
+                    author: getUser(),
+                    category: this.state.category
+                });
 
-
-            });
-            this.setState({ state: this.state }); //auto render
+                this.setState({state: this.state}); //auto render
         } else {
-            this.setState({error: 'You have to write something!'});
+            alert('You have to write something!');
+        }
+    } else {
+            alert('You have to insert your username above!');
         }
     }
 
